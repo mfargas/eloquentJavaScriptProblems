@@ -7,16 +7,17 @@ let size = 8;
 let brick = '#';
 
 let space = ' ';
-
+                                                // number of rows
 for(let i = 0; i < size; i++){
     let line = '';
-
+                                                // number of columns within the row
     for( let j = 0; j < size; j++){
+                                                // every other row 
+     if (i%2) {                  
 
-     if (i%2) {
         if (j%2) {
             line = line + space;
-        } else {
+         } else {
             line = line + brick;
          } 
 
