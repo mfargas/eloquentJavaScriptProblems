@@ -2,10 +2,33 @@
 // characters to separate lines. At each position of the grid there is either a space
 // or a "#" character. The characters should form a chessboard.//
 
+const { Z_BLOCK } = require("zlib");
+
 let size = 8;
 
-let grid;
+let brick = '#';
 
-for( i=0; i<size; i++){
-    console.log(" "+ "#");
+let space = ' ';
+
+for(let i = 0; i < size; i++){
+    let line = '';
+
+    for( let j = 0; j < size; j++){
+
+     if (i%2) {
+        if (j%2) {
+            line = line + space;
+        } else {
+            line = line + brick;
+         } 
+
+    } else {
+        if (j%2){
+            line = line + brick;
+         } else {
+            line = line + space;
+         }
+     }
+  }
+    console.log(line);
 }
