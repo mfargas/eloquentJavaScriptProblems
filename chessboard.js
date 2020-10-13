@@ -2,8 +2,6 @@
 // characters to separate lines. At each position of the grid there is either a space
 // or a "#" character. The characters should form a chessboard.//
 
-const { Z_BLOCK } = require("zlib");
-
 let size = 8;
 
 let brick = '#';
