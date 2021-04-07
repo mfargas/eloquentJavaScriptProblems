@@ -1,3 +1,5 @@
+//Chapter 3 Eloquent JavaScript
+
 // We’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 
 // to see whether it’s divisible by two.Here’s another way to define whether a positive whole number is even or odd:
 
