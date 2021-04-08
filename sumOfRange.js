@@ -6,3 +6,14 @@
 // the elements go up by increments of one, corresponding to the old behavior.The function call range(1, 10, 2) should return [1, 3, 5, 7, 9].
 // Make sure it also works with negative step values so that range(5, 2, -1) produces[5, 4, 3, 2].
 
+let start = 1;
+let end = 10;
+
+function newArray(start, end) {
+    let numbers = [];
+
+    for(let i = start ; i <= end ; i++){
+        numbers.push(i);
+    }
+    console.log(numbers);
+}
